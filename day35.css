@@ -23,6 +23,7 @@ body {
   cursor: pointer;
   opacity: 0.7;
   box-shadow: 0 10px 0 #808080;
+  border-radius:5%;
 }
 
 .btn:hover {
