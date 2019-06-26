@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAN犬PON！</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="day35.css">
@@ -42,34 +43,30 @@
 </head>
 
 <body>
-    <div class="container" id="playerPanel">
+  <div class="container" id="playerPanel">
 
+    <h1 id="message">Choose your Dog</h1>
 
-      <h1 id="message">Choose your Dog</h1>
+    <div class="images">
+      <img src="janken0.png" width="150" height="150" onClick="onClickPlayerIcon(this)"><!--グー -->
+      <img src="janken1.png" width="150" height="150" onClick="onClickPlayerIcon(this)"><!--チョキ -->
+      <img src="janken2.png" width="150" height="150" onClick="onClickPlayerIcon(this)"><!--パー -->
+    </div>
 
-      <div class="images">
-        <img src="janken0.png" width="150" height="150" onClick="onClickPlayerIcon(this)"><!--グー -->
-        <img src="janken1.png" width="150" height="150" onClick="onClickPlayerIcon(this)"><!--チョキ -->
-        <img src="janken2.png" width="150" height="150" onClick="onClickPlayerIcon(this)"><!--パー -->
-      </div>
-
-      <div id="jankenControl">
-
+    <div id="jankenControl">
       <div class="btn" onClick="janken()">JAN犬PON！</div>
-      </div>
+    </div>
 
-      <div id="enemyPanel">
+    <div id="enemyPanel">
       <h2>Enemie's Dog</h2>
-
       <img src="janken3.png" id="enemy">
-      </div>
+    </div>
 
-      <div id="resultPanel">
+    <div id="resultPanel">
       <h3>Win or Lose</h3>
       <p id="result"></p>
     </div>
 
   </div>
-
 </body>
 </html>
